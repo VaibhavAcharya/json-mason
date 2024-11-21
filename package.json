@@ -1,0 +1,43 @@
+{
+  "name": "json-mason",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "A library for performing structured modifications on JSON data. It provides a safe, predictable way to transform JSON objects through a series of operations.",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build",
+    "test": "bun test ./tests/index.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "json",
+    "json operations",
+    "json transformation",
+    "json modification",
+    "data transformation",
+    "data manipulation"
+  ],
+  "license": "MIT",
+  "author": "Vaibhav Acharya <vaibhavacharya111@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavAcharya/json-mason.git"
+  },
+  "homepage": "https://github.com/VaibhavAcharya/json-mason",
+  "bugs": "https://github.com/VaibhavAcharya/json-mason/issues",
+  "devDependencies": {
+    "@types/bun": "^1.1.10",
+    "bun-plugin-dts": "^0.3.0",
+    "prettier": "^3.3.3"
+  }
+}
